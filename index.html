@@ -2,7 +2,7 @@
 layout: default
 section_id: home
 slides:
-  - bg: images/@stock/slide-2.jpg
+  - bg: images/sliderHomepage/slide2.jpeg
     title:
       text: Wrap is a creative theme for many purposes
       animation: bottom-to-top
@@ -14,7 +14,7 @@ slides:
         - text: Purchase Now
           url: http://themeforest.net/user/honryou/portfolio?ref=honryou
           class: boxed
-  - bg: images/@stock/slide-3.jpg
+  - bg: images/sliderHomepage/slide3.jpeg
     title:
       text: It is simple but powerful
       animation: bottom-to-top
@@ -26,7 +26,7 @@ slides:
         - text: Purchase Now
           url: http://themeforest.net/user/honryou/portfolio?ref=honryou
           class: boxed
-  - bg: images/@stock/slide-6.jpg
+  - bg: images/sliderHomepage/slide1.jpg
     buttons:
       animation: bottom-to-top slow
       class: large-12
@@ -129,16 +129,18 @@ clients:
         <li class='frame {{class}}'>
           <div class='bg' style='background-image: url({{slide.bg}});'></div>
           {% if slide.infos %}
+            <div class='infoDiv'>
             {% for info in slide.infos %}
-              <div class='info{{forloop.index}} {{info.animation}}' style=''>
-                <div class='row'>
-                  <div class='medium-10 large-8 columns'>
-                    <p class='fa fa-check' style='color: #333;'>{{info.text}}</p>
-                    <div class='spacing'></div>
+                <div class='info{{forloop.index}} {{info.animation}}' style=''>
+                  <div class='row'>
+                    <div class='medium-10 large-8 columns'>
+                      <p class='fa fa-check' style='color: #333;'>{{info.text}}</p>
+                      <div class='spacing'></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            {% endfor %}
+              {% endfor %}
+            </div>
           {% else %}
             <div class='title {{slide.title.animation}}' style='color: rgb(255, 255, 255);'>
               <div class='row'>
