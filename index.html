@@ -4,66 +4,70 @@ section_id: home
 slides:
   - bg: images/sliderHomepage/slide2.jpeg
     title:
-      text: Wrap is a creative theme for many purposes
+      text: NAME is the ideal solution to aerial media.
       animation: bottom-to-top
       class: large-8 medium-11
     buttons:
       animation: bottom-to-top
       class: medium-12
       items:
-        - text: Purchase Now
+        - text: Learn More
           url: http://themeforest.net/user/honryou/portfolio?ref=honryou
           class: boxed
-  - bg: images/sliderHomepage/slide3.jpeg
-    title:
-      text: It is simple but powerful
-      animation: bottom-to-top
-      class: large-7 large-offset-5 medium-9 medium-offset-3
-    buttons:
-      animation: bottom-to-top
-      class: large-7 large-offset-5 medium-9 medium-offset-3
-      items:
-        - text: Purchase Now
-          url: http://themeforest.net/user/honryou/portfolio?ref=honryou
-          class: boxed
-  - bg: images/sliderHomepage/slide1.jpg
+  - bg: images/sliderHomepage/slide5.jpeg
     buttons:
       animation: bottom-to-top slow
       class: large-12
       items:
-        - text: View Features
+        - text: Learn More
           url: http://themeforest.net/user/honryou/portfolio?ref=honryou
           class: boxed
-        - text: Purchase Now
+        - text: Contact Us
           url: http://themeforest.net/user/honryou/portfolio?ref=honryou
     infos:
-      - text: "&nbsp;Creative and responsive design"
+      - text: "&nbsp;Services"
         animation: bottom-to-top
-      - text: "&nbsp;Many helpful shortcodes"
+      - text: "&nbsp;Aerial Photography"
         animation: bottom-to-top
-      - text: "&nbsp;Simple but powerful theme options"
+        check: true
+      - text: "&nbsp;Real Estate Photography"
         animation: bottom-to-top
-      - text: "&nbsp;Fully responsive"
+        check: true
+      - text: "&nbsp;Aerial Mapping"
         animation: bottom-to-top
+        check: true
+  - bg: images/sliderHomepage/slide3.jpeg
+    title:
+      text: Contact our award winning team and let's get started
+      animation: bottom-to-top
+      class: large-8 medium-11
+    buttons:
+      animation: bottom-to-top
+      class: large-8 medium-11
+      items:
+        - text: Contact Us
+          url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+          class: boxed
+
 boxes:
   - icon_class: fa fa-trophy
-    title: Design
+    title: Aerial Photography
     text:
       Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
   - icon_class: fa fa-compass
-    title: Art direction
+    title: Aerial Videography
     text:
       Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
   - icon_class: fa fa-star-half-empty
-    title: Branding
+    title: Real Estate Photography
     text:
       Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
   - icon_class: fa fa-image
-    title: Photography
+    title: Interior
     text:
       Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
   - icon_class: fa fa-dot-circle-o
-    title: Marketing
+    title: Website Design
     text:
       Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
 milestones:
@@ -134,7 +138,11 @@ clients:
                 <div class='info{{forloop.index}} {{info.animation}}' style=''>
                   <div class='row'>
                     <div class='medium-10 large-8 columns'>
-                      <p class='fa fa-check' style='color: #333;'>{{info.text}}</p>
+                      {% if info.check %}
+                        <p class='fa fa-check' style='color: #333;'>{{info.text}}</p>
+                      {% else %}
+                        <p class='fa' style='color: #333; font-size: 48px'><i>{{info.text}}</i></p>
+                      {% endif %}
                       <div class='spacing'></div>
                     </div>
                   </div>
@@ -168,10 +176,10 @@ clients:
 <div class='full'>
   <div class='row'>
     <div class='large-12 columns'>
-      <h4 style='color: #999'>Our history</h4>
-      <h2>This is some text about your team</h2>
+      <!--<h4 style='color: #999'>Our history</h4>-->
+      <h2>A team of professionals</h2>
       <div class='spacing'></div>
-      <p>This is the text about your Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
+      <p>Filler text about team here Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
     </div>
   </div>
   <div class='three spacing'></div>
@@ -194,10 +202,6 @@ clients:
   </div>
   <div class='four spacing'></div>
 </div>
-
-
-
-
 <div class='full'>
   <div class='row'>
     <div class='medium-6 columns'>
