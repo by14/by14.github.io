@@ -75,7 +75,7 @@ jQuery(document).foundation();
         $.ajax({
           type: 'POST',
           url: 'https://formspree.io/byang14@gmail.com',
-          data: $(form).serialize(),
+          data: {name: $('#name').val()},
           success: function(data) {
             if(data.match(/success/)) {
               $(form).trigger('reset');
