@@ -21,7 +21,7 @@
           {% else %}
             {% assign active_class = "" %}
           {% endif %}
-          {% if item.path != "blog.html" %}
+          {% if item.path != "blog.html" and item.path != "about.html"%}
             {% if item.children %}
               <li class="has-dropdown {{active_class}}">
                 <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
